@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ejercicio</title>
+</head>
+<body>
+<script>
+
+window.onload = function(){
+
+let who = ['the dog','my granma','his turtle','my bird'];
+let what = ['eat','pissed','crushed','broked'];
+let avoid = ['my homework','my laptop','my car','my boat'];
+let when = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
+
+var msg = who[Math.floor(Math.random() * who.length)]+" "+ what[Math.floor(Math.random() * what.length)]+" " +avoid[Math.floor(Math.random() * avoid.length)]+" " + when[Math.floor(Math.random() * when.length)];
+document.getElementById("excuse").innerHTML = msg;
+}
+
+
+</script>
+
+ <p id="excuse"></p>
+
+</body>
+</html>
